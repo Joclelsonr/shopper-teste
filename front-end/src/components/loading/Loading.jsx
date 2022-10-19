@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../constants/colors";
 
 const Loading = () => {
   return <Load></Load>;
@@ -21,13 +22,13 @@ const Load = styled.div`
     animation: spinner-3hs4a3 1s infinite;
   }
   ::before {
-    --c: radial-gradient(farthest-side, #0dab77 92%, #0000);
+    --c: radial-gradient(farthest-side, ${colors.primary} 92%, #0000);
     margin: 4.5px;
     background-size: 9px 9px;
     animation-timing-function: linear;
   }
   ::after {
-    --c: radial-gradient(farthest-side, #0dab77 92%, #0000);
+    --c: radial-gradient(farthest-side, ${colors.primary} 92%, #0000);
   }
 
   @keyframes spinner-3hs4a3 {

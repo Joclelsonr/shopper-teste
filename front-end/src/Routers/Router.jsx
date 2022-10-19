@@ -18,19 +18,15 @@ const Router = () => {
   const addPoduct = (product) => {
     const newCart = [...cart];
 
-    if (product.qtyStock > 1) {
-      const index = newCart.findIndex((item) => item.id === product.id);
-
-      if (index >= 0) {
-        newCart[index].qtyStock += 1;
-        newCart[index].price += product.price;
-      } else {
-        newCart.push({ ...product, qtyStock: 1 });
-      }
-      setCart(newCart);
+    const index = newCart.findIndex((item) => item.id === product.id);
+    if (index >= 0) {
+      newCart[index].qtyStock += 1;
+      newCart[index].price += product.price;
     } else {
-      alert("Produto Indisponivel");
+      newCart.push({ ...product, qtyStock: 1 });
     }
+
+    setCart(newCart);
   };
 
   const showSidebar = () => {

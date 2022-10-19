@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { colors } from "../../constants/colors";
 
 export const TitleH3 = styled.h3`
   text-align: center;
-  color: #0dab77;
+  color: ${colors.primary};
   margin: 6px;
 `;
 
@@ -15,15 +16,30 @@ export const FormContainer = styled.form`
 
 export const Button = styled.button`
   padding: 8px;
-  background-color: #0dab77;
-  color: #fff;
+  background-color: ${colors.primary};
+  color: ${colors.secondary};
   text-transform: uppercase;
   border-radius: 8px;
   margin: 6px 0;
   font-weight: bold;
   transition: 0.2s ease-in-out;
   :hover {
-    background-color: #52e092;
+    background-color: ${colors.hoverPrimary};
+    cursor: pointer;
+  }
+`;
+
+export const ButtonClear = styled.button`
+  padding: 8px;
+  background-color: ${colors.warning};
+  color: ${colors.secondary};
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin: 6px 0;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  :hover {
+    background-color: ${colors.hoverWarning};
     cursor: pointer;
   }
 `;
@@ -45,7 +61,7 @@ export const ProductContainer = styled.div`
     justify-content: space-between;
   }
   button {
-    color: #ff5f45;
+    color: ${colors.warning};
     font-weight: bold;
     cursor: pointer;
   }

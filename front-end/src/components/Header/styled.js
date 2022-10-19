@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../constants/colors";
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -7,8 +8,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   height: 10vh;
   box-shadow: 0px 0px 5px lightgray;
-  background-color: #0dab77;
-  /* position: fixed; */
+  background-color: ${colors.primary};
   div {
     display: flex;
     flex-grow: 1;
@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
     a {
       padding: 0 8px;
       text-decoration: none;
-      color: #fff;
+      color: ${colors.secondary};
       cursor: pointer;
       display: flex;
     }

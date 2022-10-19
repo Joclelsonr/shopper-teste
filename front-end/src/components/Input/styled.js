@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../constants/colors";
 
 export const InputContainer = styled.div`
   position: relative;
@@ -23,7 +24,7 @@ export const InputContainer = styled.div`
     :valid ~ label {
       transform: translateY(-24px);
       font-size: 12px;
-      color: #0dab77;
+      color: ${colors.primary};
     }
   }
 `;

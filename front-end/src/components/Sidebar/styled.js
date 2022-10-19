@@ -1,21 +1,22 @@
 import styled from "styled-components";
+import { colors } from "../../constants/colors";
 
 export const Container = styled.div`
-  background-color: #0dab77;
+  background-color: ${colors.primary};
   position: fixed;
   height: 100%;
   top: 0;
   right: 0px;
   min-width: 450px;
   animation: showSidebar 0.4s;
-  box-shadow: -2px 0 5px 0px #0dab77;
+  box-shadow: -2px 0 5px 0px ${colors.primary};
   overflow: auto;
   margin: auto;
   h2 {
     position: absolute;
     top: 80px;
     left: 20px;
-    color: #fff;
+    color: ${colors.secondary};
   }
 
   @keyframes showSidebar {
@@ -37,7 +38,7 @@ export const Purchases = styled.table`
   justify-content: space-between;
   top: 120px;
   left: 10px;
-  color: #fff;
+  color: ${colors.secondary};
   max-width: 380px;
   border-bottom: 1px solid lightgray;
   margin: 6px auto;
@@ -57,5 +58,5 @@ export const Paragra = styled.p`
   position: absolute;
   top: 130px;
   left: 20px;
-  color: #fff;
+  color: ${colors.secondary};
 `;
