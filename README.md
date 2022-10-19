@@ -1,13 +1,23 @@
-![logo_shopper](https://user-images.githubusercontent.com/104178622/195957134-3b9e6112-43fe-4280-a207-67ebdacc6c77.png)
+<div align="center">
+
+<img width="150" src="https://user-images.githubusercontent.com/104178622/195957134-3b9e6112-43fe-4280-a207-67ebdacc6c77.png">
+
 
 # Processo seletivo Shopper 🛒
+</div>
+
 
 <hr>
 
 ## Links 🔗
-[![API](https://img.shields.io/badge/Link-Front-green?style=for-the-badge&logo=React)]()
+[![API](https://img.shields.io/badge/Link-Front-green?style=for-the-badge&logo=React)](https://disagreeable-room.surge.sh/)
 <br>
 [![API](https://img.shields.io/badge/Link-Back-green?style=for-the-badge&logo=Node.js)](https://documenter.getpostman.com/view/21551982/2s8479zbzS)
+
+<hr>
+
+## Objetivo 🎯
+O projeto tem o objetivo de criar um MVP Full Stack que símula um carrinho de compras, com uma listas de produtos enviados pela empresa em excel.csv, e um back-end foi desenvolvido para que atenda as requisições.
 
 <hr>
 
@@ -44,11 +54,11 @@
 <li>Knex</li>
 <li>Moment</li>
 <li>Uuid</li>
-<li>Csv Parser<li>
+<li>Csv Parser</li>
 
 <hr>
 
-### 🚀 Como rodar localmente</h3>
+## 🚀 Como rodar localmente</h3>
 
 Siga o passo-a-passo abaixo:
 
