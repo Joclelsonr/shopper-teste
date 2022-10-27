@@ -22,6 +22,6 @@ export const Container = styled.div`
   }
 `;
 
-export const Paragra = styled.p`
+export const Paragraph = styled.p`
   color: ${colors.warning};
 `;

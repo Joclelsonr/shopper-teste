@@ -12,19 +12,19 @@ const Sidebar = () => {
 
       return new Date(currentDate).getTime() - new Date(nextDate).getTime();
     })
-    .map((item, index) => {
+    .map(({ client, date, name, price, qtd }, index) => {
       return (
         <Purchases key={index}>
           <div className="textup">
             <p>N. Cliente</p>
-            <h5>{item.client}</h5>
+            <h5>{client}</h5>
             <p>Data de entrega:</p>
-            <h5>{item.date}</h5>
+            <h5>{date}</h5>
           </div>
           <div>
-            <p>{`N. Produto: ${item.name}`}</p>
-            <p>{`Preço: ${item.price}`}</p>
-            <p>{`Quantidade: ${item.qtd}`}</p>
+            <p>{`N. Produto: ${name}`}</p>
+            <p>{`Preço: ${price}`}</p>
+            <p>{`Quantidade: ${qtd}`}</p>
           </div>
         </Purchases>
       );

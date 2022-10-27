@@ -1,16 +1,12 @@
-import { Container, Paragra } from "./styled";
+import { Container, Paragraph } from "./styled";
 
 const InventoryPage = ({ data }) => {
-  const inventory = data?.map((product) => {
+  const inventory = data?.map(({ id, name, qtyStock }) => {
     return (
-      <tr key={product.id}>
-        <td>{`${product.name}`}</td>
+      <tr key={id}>
+        <td>{`${name}`}</td>
         <td>
-          {product.qtyStock > 0 ? (
-            product.qtyStock
-          ) : (
-            <Paragra>{"INDISPONÍVEL"}</Paragra>
-          )}
+          {qtyStock > 0 ? qtyStock : <Paragraph>{"INDISPONÍVEL"}</Paragraph>}
         </td>
       </tr>
     );

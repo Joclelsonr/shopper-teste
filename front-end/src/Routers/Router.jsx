@@ -9,7 +9,7 @@ import { BASE_URL } from "../constants/Urls";
 import InventoryPage from "../pages/inventory/InventoryPage";
 
 const Router = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const [isSidebar, setIsSidebar] = useState(false);
 
   const { data, loading, cart, setCart } = useRequestData(
     `${BASE_URL}/products`
@@ -30,13 +30,13 @@ const Router = () => {
   };
 
   const showSidebar = () => {
-    setSidebar(!sidebar);
+    setIsSidebar(!isSidebar);
   };
 
   return (
     <BrowserRouter>
       <Header showSidebar={showSidebar} />
-      {sidebar && <Sidebar />}
+      {isSidebar && <Sidebar />}
       <Routes>
         <Route
           index
